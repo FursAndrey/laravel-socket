@@ -10,7 +10,11 @@ export default {
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">You're logged in!</div>
+                <div class="p-6 text-gray-900">Your messages</div>
+            </div>
+            <div class="pt-4 flex items-center">
+                <input type="text" class="border border-sky-700 rounded-lg p-2 w-4/5" placeholder="Your new message"/>
+                <span class="block w-36 text-center text-white border border-sky-700 rounded-lg ml-4 p-2 bg-sky-400">Send</span>
             </div>
         </div>
     </div>
