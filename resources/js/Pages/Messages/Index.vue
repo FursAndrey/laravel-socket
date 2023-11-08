@@ -12,6 +12,12 @@ export default {
             body: ''
         }
     },
+    created() {
+        window.Echo.channel('store-message')
+        .listen('.store-message-listen', res => {
+            this.messages.unshift(res.message);
+        })
+    },
     methods: {
         store() {
             axios.post('/messages', {body: this.body})
